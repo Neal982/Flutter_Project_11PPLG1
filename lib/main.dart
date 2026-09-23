@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_4/Pages/login_clone_page.dart';
+import 'package:flutter_application_4/Pages/calculator_page.dart';
+//import 'package:flutter_application_4/Pages/login_clone_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,19 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController usernameController = TextEditingController();
-    final TextEditingController passwordController = TextEditingController();
-    final TextEditingController Hint = TextEditingController();
+    // final TextEditingController usernameController = TextEditingController();
+    // final TextEditingController passwordController = TextEditingController();
 
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: LoginClonePage(
-        txtUsername: usernameController,
-        txtPassword: passwordController,
-      ),
+    return GetMaterialApp(
+      home: Calculator()
+      
+      // LoginClonePage(
+      //   txtUsername: usernameController,
+      //   txtPassword: passwordController,
+      // ),
     );
   }
 }
