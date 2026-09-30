@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_4/Pages/calculator_page.dart';
+//import 'package:flutter_application_4/Pages/calculator_page.dart';
+import 'package:flutter_application_4/routes.dart';
 //import 'package:flutter_application_4/Pages/login_clone_page.dart';
 import 'package:get/get.dart';
 
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
     // final TextEditingController passwordController = TextEditingController();
 
     return GetMaterialApp(
-      home: Calculator()
-      
+      title: "My App",
+      initialRoute: Routes.registration,
+      getPages: Routes.pages,
       // LoginClonePage(
       //   txtUsername: usernameController,
       //   txtPassword: passwordController,

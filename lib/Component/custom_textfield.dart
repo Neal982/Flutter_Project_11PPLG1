@@ -20,6 +20,7 @@ class CustomTextfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      
       controller: txtController,
       keyboardType: keyboardType,
       inputFormatters: inputFormatters,
@@ -28,7 +29,7 @@ class CustomTextfield extends StatelessWidget {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: const BorderSide(color: Colors.white),
+          borderSide: const BorderSide(color: Colors.blueAccent),
         ),
         hintText: hint,
         hintStyle: TextStyle(color: textColor.withValues(alpha: 0.5)),
