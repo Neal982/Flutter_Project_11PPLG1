@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_4/Component/custom_button.dart';
 import 'package:flutter_application_4/Component/custom_text.dart';
 import 'package:flutter_application_4/controller/confirmreg_ctl.dart';
-import 'package:get/get_core/src/get_main.dart';
+//import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get.dart';
 
 class ConfirmregPage extends StatelessWidget {
-  ConfirmregPage({super.key});
+  const ConfirmregPage({super.key});
 
   @override
   Widget build(BuildContext context) {

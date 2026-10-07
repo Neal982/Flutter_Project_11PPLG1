@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/Component/custom_button.dart';
 import 'package:flutter_application_4/Component/custom_textfield.dart';
-import 'package:flutter_application_4/controller/confirmreg_ctl.dart';
+//import 'package:flutter_application_4/controller/confirmreg_ctl.dart';
 import 'package:flutter_application_4/controller/registration_ctl.dart';
 import 'package:flutter_application_4/routes.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
+//import 'package:get/route_manager.dart';
 
 class RegistrationPage extends StatelessWidget {
   RegistrationPage({super.key});
@@ -48,9 +48,9 @@ class RegistrationPage extends StatelessWidget {
               hint: Text("Select Gender"),
               isExpanded: true,
               items: const [
-                DropdownMenuItem(child: Text("Male"), value: "Male"),
-                DropdownMenuItem(child: Text("Female"), value: "Female"),
-                DropdownMenuItem(child: Text("Other"), value: "Other"),
+                DropdownMenuItem(value: "Male", child: Text("Male")),
+                DropdownMenuItem(value: "Female", child: Text("Female")),
+                DropdownMenuItem(value: "Other", child: Text("Other")),
               ],
               onChanged: (value) {
                 controller.selectedGender.value = value;
