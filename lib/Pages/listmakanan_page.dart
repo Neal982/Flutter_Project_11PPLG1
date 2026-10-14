@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/controller/listmakanan_controller.dart';
+import 'package:flutter_application_4/routes.dart';
 import 'package:get/get.dart';
 
 class ListmakananPage extends StatelessWidget {
@@ -31,7 +32,7 @@ class ListmakananPage extends StatelessWidget {
                 ),
                 child: InkWell(
                   onTap: () {
-                    controller.navigateToDetail(makanan);
+                    Get.toNamed(Routes.detailmakanan, arguments: makanan);
                   },
                   child: ListTile(
                     title: Text(makanan.namaMakanan),
