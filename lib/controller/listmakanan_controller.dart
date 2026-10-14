@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
+
+import 'package:flutter_application_4/Pages/detailmakanan_page.dart';
 import 'package:flutter_application_4/models/makanan_model.dart';
 import 'package:get/get.dart';
 
 class ListmakananController extends GetxController{
-  List<MakananModel> listMakanan = [
+  RxList<MakananModel> listMakanan = [
   MakananModel(
     hargaMakanan: "Rp 12.000",
     namaMakanan: "Mie Ayam",
@@ -60,5 +61,9 @@ class ListmakananController extends GetxController{
     ratingMakanan: "3.2",
     reviewMakanan: "Rasa oke, tapi harganya agak mahal.",
   ),
-];
+].obs;
+
+void navigateToDetail(MakananModel makanan){
+  Get.to(()=> DetailmakananPage(makanan : makanan));
+}
 }
