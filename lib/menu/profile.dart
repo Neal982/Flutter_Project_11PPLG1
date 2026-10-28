@@ -6,7 +6,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 235, 235, 235),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Column(
@@ -42,7 +42,6 @@ class ProfilePage extends StatelessWidget {
                           'Daneal',
                           style: TextStyle(
                             fontSize: 18,
-                            fontWeight: FontWeight.w600,
                           ),
                         ),
                         SizedBox(height: 4),
@@ -66,7 +65,37 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Text("Preferensi", style:  TextStyle(color: Colors.grey),)
+            Text("Preferensi", style:  TextStyle(color: Colors.grey),),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Text("Keamanan Akun", style: TextStyle( color: Colors.black,fontSize: 18),)
+              ],
+            ),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Text("Langganan", style: TextStyle( color: Colors.black,fontSize: 18),)
+              ],
+            ),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Text("Metode Pembayaran", style: TextStyle( color: Colors.black,fontSize: 18),)
+              ],
+            ),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Text("Akun Keluarga", style: TextStyle( color: Colors.black,fontSize: 18),)
+              ],
+            ),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Text("Alamat tersimpan", style: TextStyle( color: Colors.black,fontSize: 18),)
+              ],
+            ),
           ],
         ),
       ),
