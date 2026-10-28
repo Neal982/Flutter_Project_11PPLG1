@@ -1,4 +1,3 @@
-import 'package:flutter_application_4/Pages/detailmakanan_page.dart';
 import 'package:flutter_application_4/models/makanan_model.dart';
 import 'package:get/get.dart';
 
