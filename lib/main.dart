@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
     return GetMaterialApp(
       title: "My App",
-      initialRoute: Routes.menudrawer,
+      initialRoute: Routes.login_clone,
       getPages: Routes.pages,
       // LoginClonePage(
       //   txtUsername: usernameController,

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/Component/custom_button.dart';
 import 'package:flutter_application_4/Component/custom_text.dart';
+import 'package:flutter_application_4/Component/custom_textfield.dart';
+import 'package:flutter_application_4/Pages/main_menu_page.dart';
+import 'package:flutter_application_4/controller/login_clone_controller.dart';
+import 'package:get/get.dart';
+
 // import 'package:flutter_application_4/Component/custom_textfield.dart';
 
 class LoginClonePage extends StatelessWidget {
-  final TextEditingController txtUsername;
-  final TextEditingController txtPassword;
+  LoginClonePage({super.key});
 
-  const LoginClonePage({
-    super.key,
-    required this.txtUsername,
-    required this.txtPassword,
-  });
+  final controller = Get.put(LoginCloneController());
 
   @override
   Widget build(BuildContext context) {
@@ -32,24 +32,31 @@ class LoginClonePage extends StatelessWidget {
               textColor: const Color.fromARGB(255, 114, 110, 110),
               fontSize: 16,
             ),
-            Image.asset('Asset/Image/IG_logo.jpg'),
-            const SizedBox(height: 0),
-            // CustomTextfield(
-            //   Colors.white,
-            //   txtController: txtUsername,
-            //   hint: "Username",
-            // ),
-            // const SizedBox(height: 20),
-            // CustomTextfield(
-            //   Colors.white,
-            //   txtController: txtPassword,
-            //   hint: "Password",
-            // ),
+            const SizedBox(height: 40),
+            Image.asset('lib/assets/images/IG_logo.jpg'),
+            const SizedBox(height: 40),
+            CustomTextfield(
+              Colors.white,
+              txtController: controller.txtUsername,
+              hint: "Username",
+            ),
+            const SizedBox(height: 20),
+            CustomTextfield(
+              Colors.white,
+              txtController: controller.txtPassword,
+              hint: "Password",
+            ),
             const SizedBox(height: 30),
-            CustomButton(
-              "Log in",
-              const Color.fromARGB(255, 0, 100, 224),
-              onPressed: () {},
+            Obx(
+              () => controller.isLoading.value
+                  ? Center(child: CircularProgressIndicator())
+                  : CustomButton(
+                      "Login",
+                      const Color.fromARGB(255, 0, 100, 224),
+                      onPressed: () {
+                        controller.login();
+                      },
+                    ),
             ),
             SizedBox(height: 20),
             CustomText(
@@ -57,8 +64,8 @@ class LoginClonePage extends StatelessWidget {
               textColor: Colors.white,
               fontSize: 16,
             ),
-            SizedBox(height: 220),
-            CustomText("Meta", textColor: Colors.white, fontSize: 16),
+            // SizedBox(height: 200),
+            // CustomText("Meta", textColor: Colors.white, fontSize: 16),
           ],
         ),
       ),

@@ -66,34 +66,34 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text("Preferensi", style:  TextStyle(color: Colors.grey),),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Column(
               children: [
-                Text("Keamanan Akun", style: TextStyle( color: Colors.black,fontSize: 18),)
+                Container(child: Text("Keamanan Akun", style: TextStyle( color: Colors.black,fontSize: 18)),)
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Column(
               children: [
-                Text("Langganan", style: TextStyle( color: Colors.black,fontSize: 18),)
+                Container(child: Text("Langganan", style: TextStyle( color: Colors.black,fontSize: 18),))
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Column(
               children: [
-                Text("Metode Pembayaran", style: TextStyle( color: Colors.black,fontSize: 18),)
+                Container(child: Text("Metode Pembayaran", style: TextStyle( color: Colors.black,fontSize: 18),))
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Column(
               children: [
-                Text("Akun Keluarga", style: TextStyle( color: Colors.black,fontSize: 18),)
+                Container(child: Text("Akun Keluarga", style: TextStyle( color: Colors.black,fontSize: 18),))
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
             Column(
               children: [
-                Text("Alamat tersimpan", style: TextStyle( color: Colors.black,fontSize: 18),)
+                Container( child: Text("Alamat tersimpan", style: TextStyle( color: Colors.black,fontSize: 18),))
               ],
             ),
           ],
