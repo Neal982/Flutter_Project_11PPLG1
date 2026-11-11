@@ -1,32 +1,32 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:flutter_application_4/models/makanan_model.dart';
-import 'package:flutter_application_4/Component/custom_text.dart';
+// import 'package:flutter/material.dart';
+// import 'package:get/get.dart';
+// import 'package:flutter_application_4/models/makanan_model.dart';
+// import 'package:flutter_application_4/Component/custom_text.dart';
 
-class DetailmakananPage extends StatelessWidget {
-  final MakananModel makanan = Get.arguments as MakananModel;
-  DetailmakananPage({super.key});
+// class DetailmakananPage extends StatelessWidget {
+//   final MakananModel makanan = Get.arguments as MakananModel;
+//   DetailmakananPage({super.key});
 
   
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Detail Makanan")),
-      body: Column(
-        children: [
-          Column(
-            children: [
-              Image.asset(makanan.gambarMakanan, width: 300, height: 300),
-              CustomText(makanan.namaMakanan, textColor: Colors.black, fontSize: 28),
-              CustomText(makanan.hargaMakanan, textColor: Colors.green, fontSize: 18),
-              CustomText(makanan.ratingMakanan, textColor: Colors.black, fontSize: 18),
-              CustomText(makanan.deskripsiMakanan, textColor: Colors.black, fontSize: 18),
-              CustomText(makanan.reviewMakanan, textColor: Colors.black, fontSize: 18),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text("Detail Makanan")),
+//       body: Column(
+//         children: [
+//           Column(
+//             children: [
+//               Image.asset(makanan.gambarMakanan, width: 300, height: 300),
+//               CustomText(makanan.namaMakanan, textColor: Colors.black, fontSize: 28),
+//               CustomText(makanan.hargaMakanan, textColor: Colors.green, fontSize: 18),
+//               CustomText(makanan.ratingMakanan, textColor: Colors.black, fontSize: 18),
+//               CustomText(makanan.deskripsiMakanan, textColor: Colors.black, fontSize: 18),
+//               CustomText(makanan.reviewMakanan, textColor: Colors.black, fontSize: 18),
+//             ],
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
