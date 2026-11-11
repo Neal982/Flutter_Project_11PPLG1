@@ -21,8 +21,8 @@ class Routes {
     GetPage(name: registration, page: () => RegistrationPage()),
     GetPage(name: login_clone, page: () => LoginClonePage()),
     GetPage(name: confirm_registration, page: () => ConfirmregPage()),
-    GetPage(name: listmakanan, page: () => ListmakananPage()),
-    GetPage(name: detailmakanan, page: () => DetailmakananPage()),
+    //GetPage(name: listmakanan, page: () => ListmakananPage()),
+    //GetPage(name: detailmakanan, page: () => DetailmakananPage()),
     GetPage(name: mainmenu, page: () =>MainMenuPage()),
     GetPage(name: menudrawer, page: () =>MenuDrawerPage()),
   ];
